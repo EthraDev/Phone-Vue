@@ -1,18 +1,30 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Journal</router-link> |
+    <router-link to="/contact">Contact</router-link> |
+    <router-link to="/clavier">Clavier</router-link>
   </nav>
   <router-view/>
 </template>
 
+<script>
+  export default {
+    name: 'App'
+  }
+</script>
+
 <style>
+
+body {
+  background-color: #171717;
+  color: white;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #A95013;
 }
 
 nav {
@@ -21,10 +33,10 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #A95013;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #f97316;
 }
 </style>
